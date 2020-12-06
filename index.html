@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/42762d49f1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <header>
+        <div class="icon"><i class="fas fa-bars" onclick="openNavigation()"></i></div>
+        <div class="logo">
+            <div class="headerText"><a class="logoStyle" href="index.html">CONEY</a></div>
+        </div>
+        <div class="headerElements navTitles">
+            <div class="headerText"><a href="register.html">REGISTER</a></div>
+            <div class="headerText"><a href="login.html">LOGIN</a></div>
+            <div class="headerText"><a href="myPosts.html">MY BLOG</a></div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="navDropDown border"><a href="index.html">Main Page</a></div>
+        <div class="navDropDown border"><a href="register.html" style="">Register</a></div>
+        <div class="navDropDown border"><a href="login.html">Login</a></div>
+        <div class="navDropDown"><a href="myPosts.html">My blog</a></div>
+    </nav>
+
+
+    <main>
+
+<!--        sorting-->
+        <div class="sortingContainer">
+            <div class="sorting">
+                <div class="sortBtn">Sort posts by date</div>
+                <div class="dropDownList">
+                    <li class="itemDrop" id="earliest" onclick="sortEarliest()"> Earliest</li>
+                    <li class="itemDrop" id="latest" onclick="sortLatest()">Latest</li>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="divToPutGallery">
+            <div class="gallery"></div>
+            <!--        <div class="card">-->
+            <!--            <img class="photo" src="https://sun9-67.userapi.com/impg/NGZXl3dYCDMt5UgVSOZRXWfwj3upIAermbOXSw/YoX2ZYfrG9U.jpg?size=960x625&quality=96&proxy=1&sign=09d0b7550ce026d5f8813eafcd8f215a" alt="">-->
+            <!--            <div class="infoPost">-->
+            <!--                <div class="date">DATE</div>-->
+            <!--                <div class="slash">/</div>-->
+            <!--                <div class="username" onclick="check()">USERNAME</div>-->
+            <!--            </div>-->
+            <!--            <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facilis, asperiores natus fugiat aspernatur, libero illum voluptate ad et sapiente quibusdam ipsam autem provident ut adipisci nobis aperiam quis consequuntur!Lorem</div>-->
+            <!--        <div class="date" id="readMore"><a href="singlePost.html"></a>READ MORE</div>-->
+            <!--       </div>-->
+        </div>
+        <div class="createdForOnePost"></div>
+
+    </main>
+
+</body>
+</html>
+
+
+<!--// index page should look like - https://coney.qodeinteractive.com/pinterest-home/-->
+<!--// whole website styles should also be as close to example as possible-->
+<!--// semantic tags should be used in html-->
+
+<!--// SINGLE POST PAGE - page which opens when single post is selected-->
+<!--// PARTICULAR USER POSTS PAGE - page which opens when you choose to see particular user posts-->
+<!--// PAGE FOR POST EDITING - page which opens when i click edit button on post i own-->
+
+<!--// Website should have these validations:-->
+<!--// when registering new user inputs should be validated in front-end (try sending random stuff to test api)-->
+<!--// when logging in there should also be validations depending on errors received from back-end-->
+<!--// when creating new post-->
+<!--// when updating post-->
+
+<!--// website should have these additional functions:-->
+
+<!--there should be possibility to filter posts by date
+
+// code shoulde be pushed to github and exported as static web page-->

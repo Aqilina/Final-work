@@ -1,0 +1,521 @@
+body{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Montserrat,sans-serif;
+    overflow-x: hidden;
+    /*kad nebutu apacioj scroll-bar*/
+}
+
+header {
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #003cd4;
+}
+
+.headerElements {
+    width: 400px;
+    margin: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerText {
+    margin: 0 10px;
+}
+
+.navTitles div:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 50px;
+    line-height: 100px;
+    color: black;
+    justify-content: center;
+    padding: 0 50px;
+    font-weight: 700;
+}
+
+.logoStyle:hover {
+    color: black;
+}
+
+.fa-bars{
+    font-size: 20px;
+}
+
+.icon {
+    display: none;
+    width: 400px;
+    margin: 0 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+main {
+    /*overflow-x: hidden;*/
+    /*position: relative;*/
+}
+
+.divToPutGallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: Montserrat,sans-serif;
+}
+
+.createdForOnePost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: Montserrat,sans-serif;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100vw;
+    height: 2000px;
+    max-width: 1500px;
+    margin: 30px 50px 0 70px;
+}
+
+.mainPhoto{
+    background-image: url("https://coney.qodeinteractive.com/wp-content/uploads/2016/12/masonry-r-slide-img-1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100vw;
+}
+
+
+/*NAVIGATION*/
+nav {
+    display: block;
+    height: 0;
+    width: 100vw;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    z-index: 3;
+}
+
+textarea {
+    resize: none;
+}
+
+.navDropDown {
+    display: none;
+    border-bottom: 1px solid grey;
+    margin: 20px 70px;
+    /*line-height: 15px;*/
+    padding-bottom: 15px;
+}
+
+.border {
+    display: none;
+    border-bottom: 1px solid grey;
+}
+
+.gallery2 {
+    display: none;
+    width: 600px;
+    padding: 15px;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*/// CARD ////*/
+.card {
+    width: 250px;
+    margin: 5px;
+}
+
+.photo {
+    width: 250px;
+}
+
+.infoPost {
+    display: flex;
+    justify-content: flex-start;
+}
+.date {
+    text-decoration: none;
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 5px;
+}
+.date:hover {
+    color: #003cd4;
+}
+
+.slash {
+    text-decoration: none;
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 5px;
+    color: #777;
+}
+
+.selectedPost {
+    font-family: Montserrat,sans-serif;
+}
+
+.username {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 5px;
+}
+
+.usernameColor {
+    color: #003cd4;
+}
+
+
+.description {
+    font-family: Poppins,sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    color: #777;
+    width: 200px;
+    overflow-wrap: break-word !important;
+
+}
+
+/*REGISTER*/
+
+.submitBtn {
+    margin: 20px;
+}
+
+.error {
+    font-size: 10px;
+    color: red;
+}
+
+#noUser {
+    display: none;
+}
+
+#nameError {
+    display: none;
+}
+#paswErrorReg {
+    display: none;
+}
+
+#paswErrorReg2 {
+    display: none;
+}
+
+.registerWindow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat,sans-serif;
+}
+
+#accountSuccess {
+    display: none;
+    color: red;
+    font-size: 20px;
+}
+
+/* // LOGIN */
+
+.loginWindow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginSuccess {
+    display: none;
+    color: red;
+    font-size: 20px;
+}
+
+
+/*MY POSTS*/
+
+.postsWindow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Montserrat,sans-serif;
+}
+
+.newPostBtn {
+    margin: 20px;
+}
+
+.postDiv {
+    margin: 10px 0 30px 0;
+    height: 0;
+    /*500px*/
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.postElem {
+    margin-top: 10px;
+}
+
+#postDescr {
+    height: 300px;
+    width: 500px;
+    padding: 20px;
+    text-align: start;
+}
+
+#postBlog {
+    margin-top: 10px;
+}
+
+.myCollection {
+    display: flex;
+    flex-direction: column;
+}
+
+.singlePost {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    background-color: #e5e7e7;
+}
+
+.myBlogImg {
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.myPostDate {
+    margin: 15px;
+}
+
+.myPostTitle {
+    text-align: center;
+    font-size: 30px;
+    width: 600px;
+    font-weight: 700;
+    margin: 10px;
+    word-wrap: break-word;
+}
+
+.myPostText {
+    padding: 15px 40px 40px 40px;
+    width: 600px;
+    overflow-wrap: break-word !important;
+    /*word-wrap: break-word !important;*/
+    display: flex;
+}
+
+.editingBtns {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 10px;
+}
+
+.textInput {
+    /*word-break: break-word;*/
+    word-break: break-all;
+    height: 200px;
+}
+
+/*////*/
+.particPostPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/*SORTING / DROPDOWN*/
+.sortingContainer {
+    width: 100vw;
+    margin: 10px 70px;
+}
+
+.sorting {
+    width: 200px;
+    margin: 10px;
+}
+
+.sortBtn {
+    position: relative;
+    border: 1px solid #777;
+    width: 200px;
+    border-radius: 4px;
+    padding: 5px;
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+}
+
+.sorting:hover .dropDownList{
+    display: block;
+}
+
+.dropDownList {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+    width: 200px;
+    padding: 5px;
+}
+
+.itemDrop {
+    margin: 5px;
+    list-style: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.itemDrop:hover {
+    color: cornflowerblue;
+}
+
+
+/*MODAL*/
+.modal {
+    display: none;
+    height: 300px;
+    width: 400px;
+    background-color: #87bfcf;
+    z-index: 3;
+    position: absolute;
+    top: 100px;
+    border-radius: 4px;
+    border: 1px solid grey;
+}
+
+.modalDelete {
+    position: absolute;
+}
+.modalText {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.modalBtnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnModal {
+    margin: 10px;
+}
+
+.chosenCardToDelete {
+    position: relative;
+}
+
+.chosenToEdit {
+    position: relative;
+}
+
+.btnDone {
+    margin: 10px;
+}
+
+.inputToEdit {
+    margin: 30px 0 10px 0;
+}
+
+@media only screen and (min-width: 1400px) {
+    .gallery {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .navTitles{
+        display: none;
+    }
+    .logo {
+        width: 1000px;
+        align-items: center;
+        justify-content: center;
+    }
+    nav {
+        display: block;
+    }
+    .icon {
+        display: flex;
+    }
+    header {
+        justify-content: normal;
+    }
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    font-size: 25px;
+    font-weight: 600;
+}

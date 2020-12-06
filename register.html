@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="register.js" defer></script>
+    <script src="https://kit.fontawesome.com/42762d49f1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<header>
+    <div class="icon"><i class="fas fa-bars" onclick="openNavigation()"></i></div>
+    <div class="logo">
+        <div class="headerText"><a class="logoStyle" href="index.html">CONEY</a></div>
+    </div>
+    <div class="headerElements navTitles">
+        <div class="headerText"><a href="register.html">REGISTER</a></div>
+        <div class="headerText"><a href="login.html">LOGIN</a></div>
+        <div class="headerText"><a href="myPosts.html">MY BLOG</a></div>
+    </div>
+</header>
+
+<nav>
+    <div class="navDropDown border"><a href="index.html">Main Page</a></div>
+    <div class="navDropDown border"><a href="register.html" style="">Register</a></div>
+    <div class="navDropDown border"><a href="login.html">Login</a></div>
+    <div class="navDropDown"><a href="myPosts.html">My blog</a></div>
+</nav>
+
+<div class="registerWindow">
+
+    <p>NAME</p>
+    <input class="registerInput" id="nameInp">
+    <p class="error" id="nameError">Name has to be at least 5 symbols length</p>
+
+    <p>PASSWORD</p>
+    <input type="password" class="registerInput" id="paswInput1">
+
+    <p>REPEAT PASSWORD</p>
+    <input type="password" class="registerInput" id="paswInput2">
+    <p class="error" id="paswErrorReg">Password should match</p>
+    <p class="error" id="paswErrorReg2">Password should be at least 5 symbols length</p>
+    <button class="submitBtn" id="submitBtnRegist">SUBMIT</button>
+    <div id="accountSuccess">Account created successfully!</div>
+</div>
+
+</body>
+</html>

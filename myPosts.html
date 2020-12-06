@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="myPosts.js" defer></script>
+    <script src="https://kit.fontawesome.com/42762d49f1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<header>
+    <div class="icon"><i class="fas fa-bars" onclick="openNavigation()"></i></div>
+    <div class="logo">
+        <div class="headerText"><a class="logoStyle" href="index.html">CONEY</a></div>
+    </div>
+    <div class="headerElements navTitles">
+        <div class="headerText"><a href="register.html">REGISTER</a></div>
+        <div class="headerText"><a href="login.html">LOGIN</a></div>
+        <div class="headerText"><a href="myPosts.html">MY BLOG</a></div>
+    </div>
+</header>
+
+<nav>
+    <div class="navDropDown border"><a href="index.html">Main Page</a></div>
+    <div class="navDropDown border"><a href="register.html" style="">Register</a></div>
+    <div class="navDropDown border"><a href="login.html">Login</a></div>
+    <div class="navDropDown"><a href="myPosts.html">My blog</a></div>
+</nav>
+
+
+
+
+<!--    WRITE POSTS BUTTON-->
+    <div class="postsWindow">
+        <button class="newPostBtn" onclick="startWriting()">WRITE NEW POST</button>
+        <div class="postDiv">
+
+            <div class="postElem">Title</div>
+            <textarea class="postInput" id="postTitle"></textarea>
+            <div class="error" id="titleError"></div>
+
+            <div class="postElem">Image URL</div>
+                <textarea class="postInput" id="postURL"></textarea>
+            <div class="error" id="urlError"></div>
+
+            <div class="postElem">Description</div>
+                <textarea class="postInput" id="postDescr"></textarea>
+            <div class="error" id="postError"></div>
+
+            <button id="postBlog" onclick="createPost()">POST MY MINDS</button>
+        </div>
+
+        <div class="myCollection">
+<!--            <div class="singlePost">-->
+<!--                <div class="myPostDate">Data</div>-->
+<!--                <img class="myBlogImg" src="https://gordon.armymwr.com/application/files/4915/7314/2606/SpecialEvents_XmasFest_EH.jpg" alt="">-->
+<!--                <div class="myPostTitle">Title</div>-->
+<!--                <div class="myPostText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quisquam ducimus, omnis quasi, voluptatibus asperiores quas, repellendus hic nihil voluptatem corrupti earum itaque fugit quam provident sunt veniam. At, provident? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex nisi tenetur officiis, expedita voluptatum, quibusdam delectus saepe doloremque, dignissimos quis consectetur corporis enim. Voluptatibus, cupiditate blanditiis ea quis autem eos?</div>-->
+<!--                <div class="editingBtns">-->
+<!--                    <button onclick="editMyPost()">EDIT</button>-->
+<!--                    <button onclick="deleteMyPost()">DELETE</button>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+
+    </div>
+
+</body>
+</html>
